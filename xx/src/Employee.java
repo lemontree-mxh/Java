@@ -1,13 +1,14 @@
 import java.io.*;
 
 public class Employee {
-    String name;
+    public String name;
     int age;
     String designation;
-    double salary;
+    public static double salary;
+    public static final String DEPARTMENT = "Development";
 
-    public Employee(String name){
-        this.name = name;
+    public Employee(String empName){
+        name = empName;
     }
 
     public void empAge(int empAge){

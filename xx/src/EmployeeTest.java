@@ -14,5 +14,7 @@ public class EmployeeTest {
         empTwo.empDesignation("Software Engineer");
         empTwo.empSalary(5000);
         empTwo.printEmployee();
+
+        System.out.println(empOne.DEPARTMENT + " average salary:" + empOne.salary);
     }
 }
