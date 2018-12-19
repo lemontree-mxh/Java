@@ -76,6 +76,94 @@ public class Test {
 
         String name = "James";
         boolean result = name instanceof String;
-        System.out.println( result);
+        System.out.println(result);
+
+        int a1 = 10;
+        while(a1 < 20){
+            System.out.println("value of a1 : " + a1);
+            a1++;
+        }
+        System.out.print("\n");
+
+        int a2 = 10;
+        do{
+            System.out.println("value of a2 : " + a2);
+            a2++;
+        }while (a2 < 20);
+        System.out.print("\n");
+
+        for(int a3 = 10;a3 < 20; a3++){
+            System.out.println("value of a3 : " + a3);
+        }
+        System.out.print("\n");
+
+        int [] numbers = {10,20,30,40,50};
+        for(int a4 : numbers){
+            System.out.print(a4);
+            System.out.print(",");
+        }
+        System.out.print("\n");
+
+        String [] names = {"James", "Larry", "Tom", "Lacy"};
+        for(String a5 : names){
+            System.out.print(a5);
+            System.out.print(",");
+        }
+        System.out.print("\n");
+
+        for (int a6 : numbers){
+            if (a6 == 30){
+                break;
+            }
+            System.out.println(a6);
+        }
+        System.out.print("\n");
+
+        for (int a6 : numbers){
+            if (a6 == 30){
+                continue;
+            }
+            System.out.println(a6);
+        }
+        System.out.print("\n");
+
+        int a7 = 30;
+
+        if (a7 < 20){
+            System.out.print("这是if语句");
+        }else {
+            System.out.print("这是else语句");
+        }
+        System.out.print("\n");
+
+        if (a7 == 10){
+            System.out.print("Value of a7 is 10");
+        }else if (a7 == 20){
+            System.out.print("Value of a7 is 20");
+        }else if (a7 == 30){
+            System.out.print("Value of a7 is 30");
+        }else {
+            System.out.print("这是else语句");
+        }
+        System.out.print("\n");
+
+        char grade = 'D';
+        switch (grade){
+            case 'A':
+                System.out.println("优秀");
+                break;
+            case 'B' :
+            case 'C' :
+                System.out.println("良好");
+                break;
+            case 'D' :
+                System.out.println("及格");
+            case 'F' :
+                System.out.println("你需要继续努力");
+                //break;
+            default :
+                System.out.println("无效等级");
+        }
+        System.out.println("你的等级是 " + grade);
     }
 }
