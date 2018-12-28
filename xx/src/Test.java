@@ -165,5 +165,26 @@ public class Test {
                 System.out.println("无效等级");
         }
         System.out.println("你的等级是 " + grade);
+        System.out.print("\n");
+
+        //Number类
+        System.out.println("90 度的正弦值：" + Math.sin(Math.PI/2));
+        System.out.println("0度的余弦值：" + Math.cos(0));
+        System.out.println("60度的正切值：" + Math.tan(Math.PI/3));
+        System.out.println("1的反正切值： " + Math.atan(1));
+        System.out.println("π/2的角度值：" + Math.toDegrees(Math.PI/2));
+        System.out.println(Math.PI);
+        System.out.print("\n");
+
+        //Character类
+        System.out.println("She said \"hello!\" to me.");
+        System.out.print("\n");
+
+        //String类
+        String palindrome = "Dot saw I was Tod";
+        int len = palindrome.length();
+        System.out.println("String palindrome Length is : " + len);
+
+
     }
 }
